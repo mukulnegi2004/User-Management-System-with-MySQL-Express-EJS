@@ -18,6 +18,20 @@ The project also supports **bulk fake user generation** using Faker.
 
 ---
 
+## 📖 What I Learned
+Building this project helped me learn and practice:
+- How to connect **Node.js** with **MySQL** using `mysql2`
+- Performing **CRUD operations** (Create, Read, Update, Delete) with SQL queries
+- Using **Faker.js** to generate bulk random data
+- Implementing **RESTful APIs** in Express
+- Rendering dynamic HTML pages with **EJS**
+- Using **Method Override** to handle `PATCH` and `DELETE` requests in forms
+- Designing a **basic authentication check** (update/delete only if password matches)
+- Handling errors and making the app more robust
+- Organizing a **full-stack workflow** (DB + server + frontend templates)
+
+---
+
 ## 🛠️ Tech Stack
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL (`mysql2`)
@@ -65,3 +79,13 @@ Visit 👉 http://localhost:8080
 
 ---
 
+
+## 📬 Connect with Me
+
+- 💼 [GitHub](https://github.com/mukulnegi2004)
+- 💬 [LinkedIn](https://www.linkedin.com/in/mukul-negi-431039378/)
+- 📫 Email: mannunegi126@gmail.com
+
+---
+
+⭐ If you like this project, feel free to star it and give feedback!
