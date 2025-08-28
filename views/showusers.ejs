@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        th{
+            background-color: rgb(164, 159, 159);
+        }
+        td{
+            background-color: azure;
+        }
+        table{
+            width: 80vw;
+        }
+        .container{
+            display: flex;
+            margin-left: 300px;
+            margin-bottom: 10px;
+        }
+        #newUser,#deleteUser{
+            margin-left: 100px;
+            background-color: black;
+            color: azure;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 30px;
+        }
+        #editUser{
+            background-color: lightblue;
+            color: black;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="get" action="/user/new">
+            <button id="newUser">Add newUser</button>
+        </form>
+        <form method="get" action="/user/delete">
+            <button id="deleteUser">delete user</button>
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>username</th>
+            <th>email</th>
+        </tr>
+        <% for(user of result){ %>
+            <tr>
+                <td><%= user.id%></td>
+                <td><%= user.username%></td>
+                <td><%= user.email%></td>
+                <td>
+                    <form method="get" action="/user/<%= user.id %>/edit">
+                        <button id="editUser">Edit user</button>
+                    </form>
+                </td>
+                
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
+
+

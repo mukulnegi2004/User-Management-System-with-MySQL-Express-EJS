@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove user</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        input{
+            height: 20px;
+            background-color: rgb(195, 195, 195);
+            border: 1px solid black;
+        }
+        button{
+            background-color: lightblue;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>You are about to remove user :-</h1>
+    <form method="post" action="/user/?_method=DELETE">
+        <input type="text" name="email" placeholder="enter email">
+        <br>
+        <br>
+        <input type="password" name="password" placeholder="enter password">
+        <br>
+        <br>
+        <button>Delete</button>
+    </form>
+    
+</body>
+</html>
