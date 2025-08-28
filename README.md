@@ -42,19 +42,21 @@ The project also supports **bulk fake user generation** using Faker.
 
 ---
 
-### ⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 
-## 1. Clone the repo
+### 1. Clone the repo
 git clone https://github.com/your-username/sqlclass.git
 cd sqlclass
 ## 2. Install dependencies
 npm install
 ## 3. Setup Database
-Import the schema.sql file into MySQL:
+```
+Import the schema.sql file into MySQL :-
 mysql -u root -p < schema.sql
 This will :-
 Create a database named nodewithsql
 Create a table named user
+```
 ## 4. Configure DB connection
 Update credentials inside index.js:
 ## 5. Run the app
